@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(6fa490be-e8a8-4039-8929-6d4d75e06425.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-image:url(ad204728-9a0e-47fc-ad5b-d71c963ca2d0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(23, 220, 247, 0.616);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: rgb(0, 128, 248);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 8px 0;
+    color: lavender;
+  }
+  
+  input, select, textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #vehicleHistory, #dailySummary {
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #clearHistory {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #clearHistory:hover {
+    background-color: #c0392b;
+  }
+  th, p, td {
+color: aliceblue;
+
+  }

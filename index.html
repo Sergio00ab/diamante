@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autolavado El Diamante</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Vehículo</h1>
+    <form id="vehicleForm">
+      <label for="vehicleType">Tipo de vehículo:</label>
+      <select id="vehicleType" required>
+        <option value="automovil">Automóvil</option>
+        <option value="camioneta">Camioneta</option>
+        <option value="moto">Moto</option>
+      </select>
+
+      <label for="licensePlate">Número de placa:</label>
+      <input type="text" id="licensePlate" required>
+
+      <label for="ownerName">Nombre de la persona:</label>
+      <input type="text" id="ownerName" required>
+
+      <label for="ownerPhone">Número celular:</label>
+      <input type="tel" id="ownerPhone" required>
+
+      <label for="observations">Observaciones:</label>
+      <textarea id="observations"></textarea>
+
+      <label for="worker">Operario de lavado:</label>
+      <select id="worker" required>
+        <option value="operario1">Operario 1</option>
+        <option value="operario2">Operario 2</option>
+      </select>
+
+      <label for="processes">Procesos seleccionados:</label>
+      <div id="processes">
+        <label><input type="checkbox" value="lavadoSencillo" /> Lavado sencillo</label><br>
+        <label><input type="checkbox" value="brilladoVIP" /> Brillado VIP</label><br>
+        <label><input type="checkbox" value="lavadoPremium" /> Lavado Premium</label><br>
+        <label><input type="checkbox" value="lavadoDiamante" /> Lavado Diamante</label><br>
+        <label><input type="checkbox" value="detailingDiamante" /> Detailing Diamante</label><br>
+        <label><input type="checkbox" value="ceramicoDiamante" /> Cerámico Diamante</label><br>
+        <label><input type="checkbox" value="lavadoVIPMoto" /> Lavado VIP (Moto)</label><br>
+      </div>
+
+      <label for="additionalServices">Servicios
+
+    <div id="vehicleHistory">
+      <h2>Historial de Vehículos</h2>
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th># Orden</th>
+            <th>Vehículo</th>
+            <th>Placa</th>
+            <th>Operario</th>
+            <th>Total</th>
+            <th>Pago</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <button id="clearHistory">Limpiar historial</button>
+    </div>
+
+    <div id="dailySummary">
+      <h2>Resumen del Día</h2>
+      <p>Total de vehículos: <span id="totalVehicles">0</span></p>
+      <p>Total pagado en efectivo: <span id="totalEfectivo">0</span></p>
+      <p>Total pagado por QR: <span id="totalQR">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
